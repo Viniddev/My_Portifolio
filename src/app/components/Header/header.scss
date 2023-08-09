@@ -1,0 +1,46 @@
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column; 
+    color: var(--text-primary);
+    grid-area: header;
+    gap: 24px;
+
+    h1{
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 20px; 
+        line-height: 30px;
+        font-style: italic;
+        color: var(--text-secundary);
+    }
+
+    img{
+        border-radius: 24px;
+    }
+
+    @media (min-width: 760px){
+        flex-direction: row-reverse;
+        align-items: center;
+
+        h1{
+            font-size: 36px;
+            line-height: 54px;
+        }
+        h2{
+            font-size: 30px; 
+            line-height: 45px;
+            font-style: normal;
+        }
+
+        img{
+            border-radius: 100%;
+            border: 3px solid var(--text-primary)
+        }
+    }  
+}
+
