@@ -1,5 +1,3 @@
-import { FaFlagUsa } from 'react-icons/fa'
-import { GiBrazilFlag } from 'react-icons/Gi'
 import "./infos.scss"
 import { SectionTitle } from '../section-title/section-title'
 
@@ -8,8 +6,8 @@ export function Infos(){
         <div className="infos">
             <SectionTitle text='Languages'/>
             <div className="languages-info">
-                <span><FaFlagUsa/> EN - Intermadiary</span>
-                <span><GiBrazilFlag/> PT - Native Speaker</span>
+                <span> EN - Intermadiary</span>
+                <span> PT - Native Speaker</span>
             </div>
 
             <SectionTitle text='Education'/>
