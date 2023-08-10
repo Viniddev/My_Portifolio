@@ -1,3 +1,68 @@
 .experience{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
     grid-area: experience;
+    gap: 15px;
+    max-width: 500px;
+
+    .experience-unit{
+        width: 260px;
+        border-radius: 24px;
+        border: 2px solid var(--text-secundary);
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .experience-measure{
+        background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 24px;
+        height: 36px;
+        border: 1px solid white;
+        box-sizing: border-box;
+
+    }
+    .ex1{
+        width: 60%;
+    }
+    .ex2{
+        width: 100%;
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .experience-time{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: var(--text-secondary);
+        text-align: center;
+    }
+
+    @media (min-width:1080px){
+        gap: 15px;
+        p{
+            font-size: 18px;
+            line-height: 36px;
+            text-align: start;
+        }
+    }
 }

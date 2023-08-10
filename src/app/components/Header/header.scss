@@ -6,6 +6,7 @@
     grid-area: header;
     gap: 24px;
 
+
     h1{
         font-weight: 600;
         font-size: 28px;
@@ -23,7 +24,7 @@
         border-radius: 24px;
     }
 
-    @media (min-width: 760px){
+    @media (min-width:1080px){
         flex-direction: row-reverse;
         align-items: center;
 

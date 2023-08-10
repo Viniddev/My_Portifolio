@@ -1,24 +1,53 @@
 .conteiner{
-    padding:40px 32px;
+    padding:30px 25px 30px 25px;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-areas: "header"
                          "buttons"
                          "experience"
                          "infos";
+
+    gap: 15px;    
+    .contact-me{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: buttons;
+        width: 100%;
+        gap: 10px;
+
+        .btn-primary{
+            background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
+            border-radius: 24px;
+            height: 55px;
+            width: 320px;
+            color: var(--text-primary);
+            border: none;
+            font-size: 1rem;
+            padding: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            gap: 20px;
+        }
+    }
 }
 
-@media (min-width: 768px){
+@media (min-width:1080px){
     .conteiner{
         padding: 70px 60px;
         height: 100vh;
         grid-template-columns: 60% 30%;
         grid-template-rows: fit-content(100%);
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         justify-items: start;
         grid-template-areas: "header infos"
-                             "experience empty"
-                             "empty2 buttons";
+                             "experience buttons";
     }
 }

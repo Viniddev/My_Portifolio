@@ -1,3 +1,22 @@
 .infos{
+    display: flex;
+    flex-direction: column;
     grid-area: infos;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    max-width: 500px;
+
+    .educational-Info{
+        span{
+            font-size: 16px;
+        }
+    }
+
+    .languages-info{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
 }
