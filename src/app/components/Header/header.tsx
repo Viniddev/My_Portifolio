@@ -1,11 +1,11 @@
-import Image from "next/image"
-import "./header.scss"
+import Image from "next/image";
+import "./header.scss";
 
 export function Header(){
     return(
         <div className="header">
             <div className="apresentation">
-                <h1>Hi, I'm Vinícius! 👋</h1>
+                <h1>Hi, I&apos;m Vinícius! 👋</h1>
                 <h2>Software Developer</h2>
             </div>
             <Image
