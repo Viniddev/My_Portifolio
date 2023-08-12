@@ -1,4 +1,4 @@
-import "./section-title"
+import "./section-title.scss"
 
 interface SectionTitleProps{
     text:string
