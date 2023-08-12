@@ -16,7 +16,8 @@ const ExperienceComps: React.FC<props> = ({ data }) =>{
                     priority
                 />
                 <div className="experience-unit">
-                    <div className={`experience-measure ${data.measure}`}>{data.time} year</div>
+                    <div className={`experience-measure ${data.measure}`}>{data.time} 
+                    {parseInt(data.time) > 1? " years" : " year"} </div>
                 </div>
          </div>
     )
